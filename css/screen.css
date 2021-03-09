@@ -1,10 +1,10 @@
-body{
+body {
     background: khaki;
     max-width: 42em;
     margin: 0 auto;
 }
 
-html{
+html {
     font-size: 16px;
     line-height: 1.5;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -13,7 +13,7 @@ html{
     background-color: blue;
 }
 
-::selection{
+::selection {
     background: #44c8f5;
     color: white;
 }
@@ -90,12 +90,13 @@ blockquote {
     font-family: 'Times New Roman', serif;
 }
 
-ul, ol{
+ul,
+ol {
     padding-left: 24px;
 }
 
 li ul,
-li ol{
+li ol {
     margin-bottom: 0;
 }
 
@@ -104,9 +105,7 @@ blockquote * {
     line-height: inherit
 }
 
-figcaption {
-
-}
+figcaption {}
 
 hr {
     border: 0;
@@ -129,3 +128,38 @@ a:hover,
 a:focus {
     color: crimson;
 }
+
+/*
+    Media Queries
+    ---
+    EXAMPLE Media Queries for Responsive Design.
+    These examples override the primary ('mobile first') styles.
+    Modify as content requires.
+*/
+
+
+/* Extra small devices (portrait phones, less than 576px)
+   No media query since this is the default in Bootstrap
+*/
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+    html {
+        padding: 48px 48px 24px;
+    }
+
+    h1 {
+        font-size: 58px;
+        line-height: 64px;
+    }
+}
+
+/* Large devices (landscape tablets, desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
