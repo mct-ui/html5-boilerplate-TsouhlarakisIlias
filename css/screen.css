@@ -11,6 +11,7 @@ html {
     color: #111;
     padding: 24px 24px 0;
     background-color: blue;
+    scroll-behavior: smooth;
 }
 
 ::selection {
